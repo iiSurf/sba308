@@ -5,6 +5,8 @@ const CourseInfo = {
 };
 
 // The provided assignment group.
+
+// watch end of class video from Tuesday to get another walkthrough on how to start.
 const AssignmentGroup = {
   id: 12345,
   name: "Fundamentals of JavaScript",
