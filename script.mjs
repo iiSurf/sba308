@@ -5,6 +5,7 @@ const CourseInfo = {
 };
 
 // The provided assignment group.
+// break it down one small problem at a time. you can do this. little by little. you got this!
 
 // watch end of class video from Tuesday to get another walkthrough on how to start.
 const AssignmentGroup = {
