@@ -81,8 +81,16 @@ const LearnerSubmissions = [
   }
 ];
 
+// ag means Assignment Group
 function getLearnerData(course, ag, submissions) {
   // here, we would process this data to achieve the desired result.
+  try {
+
+  }
+  catch (error) {
+
+  }
+
   const result = [
     {
       id: 125,
