@@ -85,6 +85,7 @@ const LearnerSubmissions = [
 function getLearnerData(course, ag, submissions) {
   // here, we would process this data to achieve the desired result.
   // check if course_id is not equal to CourseInfo
+  // fix github connection yet again.
 
   try {
     if (AssignmentGroup.course_id !== CourseInfo) {
