@@ -88,6 +88,8 @@ function getLearnerData(course, ag, submissions) {
 
   }
   catch (error) {
+    // Always use catch for data that will be out of bounds or fail the parameters set.
+    return error.message;
 
   }
 
@@ -106,7 +108,7 @@ function getLearnerData(course, ag, submissions) {
     }
   ];
 
-  return result;
+  return result; // this outputs to the console. Remove eventually?
 }
 
 const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
