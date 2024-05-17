@@ -86,15 +86,22 @@ function getLearnerData(course, ag, submissions) {
   // here, we would process this data to achieve the desired result.
   // check if course_id is not equal to CourseInfo
   // fix github connection yet again. and again...
-  // if () {
 
-  // }
 
   try {
     if (AssignmentGroup.course_id !== CourseInfo) {
       throw new Error (`Error, Course_id is not the same as Course Info `);
     }
+
+    let learnerPointsMade = {
+
+    };
+    let LearnersGradeWeight = {
+      
+    };
   }
+
+
     catch (error) {
       // Always use catch for data that will be out of bounds or fail the parameters set.
       return error.message;
