@@ -81,6 +81,27 @@ const LearnerSubmissions = [
   }
 ];
 
+// courseInfo
+// AssignmentGroup
+// AssignmentInfo
+// LearnerSubmission
+// course_Id
+// points_Possible
+// assignment_Id
+// number
+// avg
+// submitted_at
+// due_at
+
+
+function lateAssignment(points, maxPoints, dueDate, dateSubmit) {
+  let lateDeduction = 0.1;
+  if (Date.parse(dateSubmit) > Date.parse(dueDate)) {
+    return points -(points / maxPoints) * maxPoints * lateDeduction;
+  }
+  return points;
+}
+
 // ag means Assignment Group
 function getLearnerData(course, ag, submissions) {
   // here, we would process this data to achieve the desired result.
@@ -90,21 +111,14 @@ function getLearnerData(course, ag, submissions) {
 
   try {
     if (AssignmentGroup.course_id !== CourseInfo) {
-      throw new Error (`Error, Course_id is not the same as Course Info `);
+      throw new Error(`Error, Course_id is not the same as Course Info `);
     }
-
-    let learnerPointsMade = {
-
-    };
-    let LearnersGradeWeight = {
-      
-    };
   }
 
 
-    catch (error) {
-      // Always use catch for data that will be out of bounds or fail the parameters set.
-      return error.message;
+  catch (error) {
+    // Always use catch for data that will be out of bounds or fail the parameters set.
+    return error.message;
 
   }
 
