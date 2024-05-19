@@ -1,3 +1,9 @@
+// The provided assignment group.
+// break it down one small problem at a time. you can do this. little by little. you got this!
+// look for numbers between the students that are similar. remember you are taking in data, going through it, and putting it back in to an array.
+// fix
+// watch end of class video from Tuesday to get another walkthrough on how to start.
+
 // The provided course information.
 const CourseInfo = {
   id: 451,
@@ -5,11 +11,6 @@ const CourseInfo = {
 };
 
 // The provided assignment group.
-// break it down one small problem at a time. you can do this. little by little. you got this!
-// look for numbers between the students that are similar. remember you are taking in data, going through it, and putting it back in to an array.
-// fix
-
-// watch end of class video from Tuesday to get another walkthrough on how to start.
 const AssignmentGroup = {
   id: 12345,
   name: "Fundamentals of JavaScript",
@@ -100,13 +101,13 @@ const LearnerSubmissions = [
 // let dateSubmitted = The date when the student submitted the assignment.
 
 // This function handles late assignment submissions.
-function lateAssignment(pointsForAssignment, maxAssignmentPoints, dueDate, dateSubmitted) {
-  let lateDeduction = 0.1; // 10% taken off for late assignment
-  if (Date.parse(dateSubmitted) > Date.parse(dueDate)) {
-    return pointsForAssignment - (pointsForAssignment / maxAssignmentPoints) * maxAssignmentPoints * lateDeduction;
-  }
-  return pointsForAssignment;
-}
+// function lateAssignment(pointsForAssignment, maxAssignmentPoints, dueDate, dateSubmitted) {
+//   let lateDeduction = 0.1; // 10% taken off for late assignment
+//   if (Date.parse(dateSubmitted) > Date.parse(dueDate)) {
+//     return pointsForAssignment - (pointsForAssignment / maxAssignmentPoints) * maxAssignmentPoints * lateDeduction;
+//   }
+//   return pointsForAssignment;
+// }
 
 // let assignmentScores = Assignment scores
 // let weight = Total weight of the assignments.
@@ -116,11 +117,11 @@ function lateAssignment(pointsForAssignment, maxAssignmentPoints, dueDate, dateS
 // scoreObtained = The score obtained for a specific assignment.
 
 // The function returns the weighted average score.
-function weightedAvg(assignmentScores, weight) {
+// function weightedAvg(assignmentScores, weight) {
   // let totalScore = 
   // let weightedAvg =
   // let weight =
-}
+// }
 
 
 // ag means Assignment Group
@@ -133,48 +134,48 @@ function weightedAvg(assignmentScores, weight) {
 
 // getLearnerData function to acquire learner data
 // Validate if the assignment group belongs to the specified course
-function getLearnerData(course, ag, submissions) {
-  let learnerScores = {};
-  for (const submission of learnerSubmissions) {
-    const learnerId = submission.learner_id;
-    const assignmentId = submission.assignment_id;
-    const submittedAt = submission.submission.submitted_at;
-    const score = submission.submission.score;
+// function getLearnerData(course, ag, submissions) {
+//   let learnerScores = {};
+//   for (const submission of learnerSubmissions) {
+//     const learnerId = submission.learner_id;
+//     const assignmentId = submission.assignment_id;
+//     const submittedAt = submission.submission.submitted_at;
+//     const score = submission.submission.score;
 
-    const assignment = findAssignmentById(assignmentId);
-}
+//     const assignment = findAssignmentById(assignmentId);
+// }
 
-  try {
-    if (AssignmentGroup.course_id !== CourseInfo) {
-      throw new Error(`Error, Course_id is not the same as Course Info `);
-    }
-  }
+//   try {
+//     if (AssignmentGroup.course_id !== CourseInfo) {
+//       throw new Error(`Error, Course_id is not the same as Course Info `);
+//     }
+//   }
 
 
-  catch (error) {
-    // Always use catch for data that will be out of bounds or fail the parameters set.
-    return error.message;
+//   catch (error) {
+// Always use catch for data that will be out of bounds or fail the parameters set.
+// return error.message;
 
-  }
+// }
 
-  const result = [
-    {
-      id: 125,
-      avg: 0.985, // (47 + 150) / (50 + 150)
-      1: 0.94, // 47 / 50
-      2: 1.0 // 150 / 150
-    },
-    {
-      id: 132,
-      avg: 0.82, // (39 + 125) / (50 + 150)
-      1: 0.78, // 39 / 50
-      2: 0.833 // late: (140 - 15) / 150
-    }
-  ];
+// const result = [
+//   {
+//     id: 125,
+//     avg: 0.985, // (47 + 150) / (50 + 150)
+//     1: 0.94, // 47 / 50
+//     2: 1.0 // 150 / 150
+//   },
+//   {
+//     id: 132,
+//     avg: 0.82, // (39 + 125) / (50 + 150)
+//     1: 0.78, // 39 / 50
+//     2: 0.833 // late: (140 - 15) / 150
+//   }
+// ];
 
-  return result; // this outputs to the console. Remove eventually?
-}
+// return result; // this outputs to the console. Remove eventually?
+// }
 
-const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
+// const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 
-console.log(result);
+// console.log(result);
