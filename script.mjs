@@ -108,17 +108,19 @@ function lateAssignment(pointsForAssignment, maxAssignmentPoints, dueDate, dateS
   return pointsForAssignment;
 }
 
-// let scores = Assignment scores
+// let assignmentScores = Assignment scores
 // let weight = Total weight of the assignments.
 // totalScore = All the scores.
-// weightedScore = The weighted scores for each assignment.
+// weightedAvg = The weighted scores for each assignment.
 // assignment_id = Assignment Id number.
-// score = The score obtained for a specific assignment.
+// scoreObtained = The score obtained for a specific assignment.
 
 // The function returns the weighted average score.
-// function weightedAvg(points, weight) {
-//   let total = 
-// }
+function weightedAvg(assignmentScores, weight) {
+  // let totalScore = 
+  // let weightedAvg =
+  // let weight =
+}
 
 // ag means Assignment Group
 function getLearnerData(course, ag, submissions) {
