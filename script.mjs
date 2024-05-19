@@ -81,6 +81,7 @@ const LearnerSubmissions = [
   }
 ];
 
+// Variables Used:
 // courseInfo
 // AssignmentGroup
 // AssignmentInfo
@@ -93,14 +94,31 @@ const LearnerSubmissions = [
 // submitted_at
 // due_at
 
+// let pointsForAssignment = The points earned for the assignment.
+// let maxAssignmentPoints = The maximum possible points for the assignment.
+// let dueDate = The due date of the assignment.
+// let dateSubmitted = The date when the student submitted the assignment.
 
-function lateAssignment(points, maxPoints, dueDate, dateSubmit) {
-  let lateDeduction = 0.1;
-  if (Date.parse(dateSubmit) > Date.parse(dueDate)) {
-    return points -(points / maxPoints) * maxPoints * lateDeduction;
+// This function handles late assignment submissions.
+function lateAssignment(pointsForAssignment, maxAssignmentPoints, dueDate, dateSubmitted) {
+  let lateDeduction = 0.1; // 10% taken off for late assignment
+  if (Date.parse(dateSubmitted) > Date.parse(dueDate)) {
+    return pointsForAssignment - (pointsForAssignment / maxAssignmentPoints) * maxAssignmentPoints * lateDeduction;
   }
-  return points;
+  return pointsForAssignment;
 }
+
+// let scores = Assignment scores
+// let weight = Total weight of the assignments.
+// totalScore = All the scores.
+// weightedScore = The weighted scores for each assignment.
+// assignment_id = Assignment Id number.
+// score = The score obtained for a specific assignment.
+
+// The function returns the weighted average score.
+// function weightedAvg(points, weight) {
+//   let total = 
+// }
 
 // ag means Assignment Group
 function getLearnerData(course, ag, submissions) {
