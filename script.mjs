@@ -122,12 +122,27 @@ function weightedAvg(assignmentScores, weight) {
   // let weight =
 }
 
-// ag means Assignment Group
-function getLearnerData(course, ag, submissions) {
-  // here, we would process this data to achieve the desired result.
-  // check if course_id is not equal to CourseInfo
-  // fix github connection yet again. and again...
 
+// ag means Assignment Group
+// let courseInfo = The course information.
+// let AssignmentGroup = An assignment group. Information about assignments, weights, and due dates.
+// let LearnerSubmissions = A list of submissions.
+// let learner_id = ID of the learner.
+// assignment_id = ID of the assignment.
+// let learnerScores = learner scores. Starts as an empty array.
+
+// getLearnerData function to acquire learner data
+// Validate if the assignment group belongs to the specified course
+function getLearnerData(course, ag, submissions) {
+  let learnerScores = {};
+  for (const submission of learnerSubmissions) {
+    const learnerId = submission.learner_id;
+    const assignmentId = submission.assignment_id;
+    const submittedAt = submission.submission.submitted_at;
+    const score = submission.submission.score;
+
+    const assignment = findAssignmentById(assignmentId);
+}
 
   try {
     if (AssignmentGroup.course_id !== CourseInfo) {
